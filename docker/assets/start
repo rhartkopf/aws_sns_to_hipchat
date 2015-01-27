@@ -1,0 +1,3 @@
+#!/bin/bash
+
+cd /usr/local/sns_hipchat/ ; RACK_ENV=production ruby aws_sns_to_hipchat.rb -p 80
