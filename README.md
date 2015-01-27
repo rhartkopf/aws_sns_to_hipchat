@@ -20,7 +20,7 @@ You'll need Docker installed for this. Follow the instructions at https://docs.d
 
 Then just build the container: `docker built -t sns_hipchat .`
 
-And run: `docker run -d -p <PORT NUMBER>:80 sns_hipchat`
+And run: `docker run -d -p <PORT NUMBER>:80 -e HIPCHAT_AUTH_TOKEN=<TOKEN> sns_hipchat`
 
 Todo:
 Add an upstart script.
